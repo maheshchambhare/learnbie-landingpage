@@ -16,14 +16,13 @@
   </head>
   <body>
     <header class="head" id="header">
-      <div class="logo" id="header-img">
-        <img src="./images/Asset 4.svg" alt="" />
-      </div>
-      <navbar class="nav" id="nav-bar">
+      <nav class="nav" id="nav-bar">
+        <div class="logo">
+          <a href="./index.html"
+            ><img id="header-img" src="./images/Asset 4.svg" alt=""
+          /></a>
+        </div>
         <ul class="nav-list">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-link">About Us</a>
-          </li>
           <li class="nav-item">
             <a href="#s" class="nav-link">HTML</a>
           </li>
@@ -34,23 +33,23 @@
             <a href="#f" class="nav-link">Java Script</a>
           </li>
         </ul>
-      </navbar>
+      </nav>
     </header>
     <div class="container">
-      <div class="first-page" id="f">
+      <div class="first-page" id="fp">
         <div class="title">
           <h1>Learnbie</h1>
           <p>Learn Things as newbe</p>
         </div>
         <div class="illustration">
-          <img src="./images/5 SCENE.svg" alt="" />
+          <img id="co-img" src="./images/5 SCENE.svg" alt="" />
         </div>
       </div>
 
       <div class="second-page" id="s">
         <div class="html-video">
           <iframe
-            class="video"
+            id="video"
             class="html"
             width="760"
             height="515"
@@ -103,7 +102,7 @@
 
         <div class="css-video">
           <iframe
-            class="video"
+            id="video"
             width="760"
             height="515"
             src="https://www.youtube.com/embed/1Rs2ND1ryYc"
@@ -116,7 +115,7 @@
       <div class="fourth-page" id="f">
         <div class="js-video">
           <iframe
-            class="video"
+            id="video"
             width="760"
             height="515"
             src="https://www.youtube.com/embed/3PHXvlpOkf4"
@@ -146,11 +145,35 @@
           >
         </div>
       </div>
+      <div class="form">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <label id="label" for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="email"
+            name="email"
+            required
+          />
+          <input class="btn" type="submit" id="submit" value="Submit" />
+        </form>
+      </div>
     </div>
 
-    <!-- <footer class="footer">
-      <h1>hello</h1>
-    </footer> -->
+    <footer class="footer">
+      <ul class="footer-links">
+        <li>
+          <a href="https://github.com/Leo-mahesh" target="_blank"
+            ><i class="fab fa-github-alt"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://codepen.io/Leo-Mahesh" target="_blank"
+            ><i class="fab fa-codepen"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
 
     <script src="./app.js"></script>
   </body>
